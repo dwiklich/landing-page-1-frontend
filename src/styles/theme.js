@@ -4,6 +4,7 @@ export const theme = {
     secondaryColor: '#DC143C',
     white: '#FFFFFF',
     dark: '#0A1128',
+    mediumGray: '#DDDDDD',
   },
   fonts: {
     family: {
