@@ -8,6 +8,7 @@ import { NavLinks } from '../NavLinks';
 import { Menu as MenuIcon } from '@styled-icons/material-outlined/Menu';
 import { Close as CloseIcon } from '@styled-icons/material-outlined/Close';
 import { useEffect, useState } from 'react';
+import { theme } from '../../styles/theme';
 export const Menu = ({ links = [], logoData }) => {
   const [visible, setVisible] = useState(false);
 
@@ -29,8 +30,11 @@ export const Menu = ({ links = [], logoData }) => {
       <Styled.Container
         visible={visible}
         onClick={() => {
+          // if (screen.width >= 768) return;
           setVisible((prevState) => !prevState);
         }}
+        role="dialog"
+        aria-label="Menu Container"
       >
         <SectionContainer>
           <Styled.MenuContainer>

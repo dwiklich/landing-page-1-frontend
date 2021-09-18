@@ -31,6 +31,7 @@ export const Container = styled.div`
 
     @media ${theme.media.lteMedium} {
       /* display: ${visible ? 'flex' : 'none'}; */
+
       visibility: hidden;
       opacity: 0;
 
@@ -89,9 +90,9 @@ export const Button = styled.button`
     border-radius: 0.5rem;
     display: none;
 
-    ${visible && menuVisible(theme)}
-
     @media ${theme.media.lteMedium} {
+      ${visible && menuVisible(theme)}
+
       display: flex;
       justify-content: center;
       align-items: center;
