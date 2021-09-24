@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<GridSection /> should render 1`] = `
+exports[`<GridText /> should render with background 1`] = `
 .c4 {
   color: #0A1128;
   font-size: 6.4rem;
@@ -98,11 +98,11 @@ exports[`<GridSection /> should render 1`] = `
           <div
             class="c8"
           >
-            <h1
+            <h3
               class="c3 c9"
             >
               Teste 1
-            </h1>
+            </h3>
             <p
               class="c5 c6"
             >
@@ -112,11 +112,11 @@ exports[`<GridSection /> should render 1`] = `
           <div
             class="c8"
           >
-            <h1
+            <h3
               class="c3 c9"
             >
               Teste 2
-            </h1>
+            </h3>
             <p
               class="c5 c6"
             >
@@ -126,11 +126,11 @@ exports[`<GridSection /> should render 1`] = `
           <div
             class="c8"
           >
-            <h1
+            <h3
               class="c3 c9"
             >
               Teste 3
-            </h1>
+            </h3>
             <p
               class="c5 c6"
             >

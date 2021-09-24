@@ -66,9 +66,8 @@ describe('<Menu />', () => {
 
   it('should not render links', () => {
     const { container } = renderTheme(<Menu logoData={logoData}></Menu>);
-
     const navigation = screen.getByRole('navigation');
-    console.log(navigation);
+
     expect(navigation.firstChild).not.toBeInTheDocument();
     expect(navigation.querySelectorAll('a')).toHaveLength(0);
 
