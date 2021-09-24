@@ -1,40 +1,37 @@
 import P from 'prop-types';
-
 import * as Styled from './styles';
+import { SectionBackground } from '../SectionBackground';
 import { Heading } from '../Heading';
 import { TextComponent } from '../TextComponent';
-import { SectionBackground } from '../SectionBackground';
-import { SectionContainer } from '../SectionContainer';
 
-export const GridTwoColumns = ({ loadData }) => {
+export const GridTwoColumns = ({
+  title,
+  text,
+  srcImg,
+  background = false,
+  sectionId = '',
+}) => {
   return (
-    <>
-      <SectionBackground background={loadData.metaData.background}>
-        <SectionContainer>
-          <Styled.Container>
-            <div>
-              <Heading uppercase colorDark={false}>
-                {loadData.title}
-              </Heading>
-              <TextComponent>{loadData.description}</TextComponent>
-            </div>
-            <img src={loadData.image} />
-          </Styled.Container>
-        </SectionContainer>
-      </SectionBackground>
-    </>
+    <SectionBackground background={background} sectionId={sectionId}>
+      <Styled.Container background={background}>
+        <Styled.TextContainer>
+          <Heading uppercase colorDark={!background} as="h2">
+            {title}
+          </Heading>
+          <TextComponent>{text}</TextComponent>
+        </Styled.TextContainer>
+        <Styled.ImageContainer>
+          <Styled.Image src={srcImg} alt={title} />
+        </Styled.ImageContainer>
+      </Styled.Container>
+    </SectionBackground>
   );
 };
 
 GridTwoColumns.propTypes = {
-  loadData: P.shape({
-    title: P.string.isRequired,
-    description: P.string.isRequired,
-    image: P.string.isRequired,
-    metaData: {
-      name: P.string.isRequired,
-      section_id: P.string.isRequired,
-      background: P.bool.isRequired,
-    },
-  }).isRequired,
+  title: P.string.isRequired,
+  text: P.string.isRequired,
+  srcImg: P.string.isRequired,
+  background: P.bool,
+  sectionId: P.string,
 };

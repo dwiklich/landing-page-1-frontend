@@ -1,11 +1,12 @@
 import { screen } from '@testing-library/react';
-
 import { renderTheme } from '../../styles/render-theme';
 import { GridTwoColumns } from '.';
 
+import mock from './mock';
+
 describe('<GridTwoColumns />', () => {
-  it('should render', () => {
-    renderTheme(<GridTwoColumns>texto</GridTwoColumns>);
-    expect(screen.getByRole('heading', { name: 'texto' })).toBeInTheDocument();
+  it('should render two column grid', () => {
+    const { container } = renderTheme(<GridTwoColumns {...mock} />);
+    expect(container).toMatchSnapshot();
   });
 });
