@@ -1,0 +1,85 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ImageModal /> should match snapshot 1`] = `
+.c0 {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+}
+
+.c1 {
+  position: absolute;
+  left: 50%;
+  bottom: 50%;
+  -webkit-transform: translateX(-50%) translateY(50%);
+  -ms-transform: translateX(-50%) translateY(50%);
+  transform: translateX(-50%) translateY(50%);
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.c2 {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.c2:hover,
+.c2:focus {
+  color: #000;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.c3 {
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  background-size: cover;
+  width: 60%;
+  border-radius: 1rem;
+}
+
+@media (max-width:768px) {
+  .c1 {
+    width: 100%;
+  }
+}
+
+<div
+  aria-label="modal"
+  class="c0"
+>
+  <div
+    class="c1"
+  >
+    <span
+      aria-label="modal-button-close"
+      class="c2"
+    >
+      ×
+    </span>
+    <img
+      alt="Teste 4"
+      aria-label="image-modal"
+      class="c3"
+      src="https://source.unsplash.com/random/800x800?r=4"
+    />
+  </div>
+</div>
+`;
