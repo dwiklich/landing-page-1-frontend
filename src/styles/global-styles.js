@@ -9,7 +9,8 @@ export const GlobalStyles = createGlobalStyle`
 }
 
 html {
-  font-size: 62.5%, //faz 1 rem ser 1 pixel
+  font-size: 62.5%; //faz 1 rem ser 1 pixel
+  scroll-behavior: smooth;
 }
 
 body {
