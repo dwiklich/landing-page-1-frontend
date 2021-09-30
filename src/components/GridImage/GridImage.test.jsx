@@ -11,7 +11,10 @@ describe('<GridImage />', () => {
     const image = screen.getByRole('img', { name: 'Teste 1' });
 
     fireEvent.click(image);
-    expect(image).toBeInTheDocument();
+    expect(image).toHaveProperty(
+      'src',
+      'https://source.unsplash.com/random/800x800?r=1',
+    );
   });
 
   it('should render not background', () => {

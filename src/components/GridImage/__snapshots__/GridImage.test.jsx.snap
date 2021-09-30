@@ -146,11 +146,11 @@ exports[`<GridImage /> should match snapshot 1`] = `
       >
         My grid
       </h1>
-      <p
+      <div
         class="c4 c5"
       >
         Atque doloribus nobis laudantium esse ut, non commodi maxime distinctio veritatis unde
-      </p>
+      </div>
       <div
         class="c6"
       >

@@ -2,6 +2,7 @@ import P from 'prop-types';
 import { useCallback } from 'react';
 import { useEffect } from 'react';
 import { useState } from 'react';
+
 import { Heading } from '../Heading';
 import { ImageModal } from '../ImageModal';
 import { SectionBackground } from '../SectionBackground';
