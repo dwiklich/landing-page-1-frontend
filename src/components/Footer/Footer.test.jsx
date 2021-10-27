@@ -5,12 +5,12 @@ import { Footer } from '.';
 
 describe('<Footer />', () => {
   it('should render', () => {
-    renderTheme(<Footer html="<h1>texto</h1>" />);
+    renderTheme(<Footer footerHtml="<h1>texto</h1>" />);
     expect(screen.getByRole('heading', { name: 'texto' })).toBeInTheDocument();
   });
 
   it('should match snapshot', () => {
-    const { container } = renderTheme(<Footer html="<h1>texto</h1>" />);
+    const { container } = renderTheme(<Footer footerHtml="<h1>texto</h1>" />);
     expect(container).toMatchInlineSnapshot(`
       .c4 {
         font-size: 2.4rem;

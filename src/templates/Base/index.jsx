@@ -12,7 +12,7 @@ export const Base = ({ links, logoData, footerHtml, children }) => {
       <GoTop />
       <Styled.Container>
         {children}
-        <Footer html={footerHtml} />
+        <Footer footerHtml={footerHtml} />
       </Styled.Container>
     </>
   );
@@ -21,6 +21,6 @@ export const Base = ({ links, logoData, footerHtml, children }) => {
 Base.propTypes = {
   links: Menu.propTypes.links,
   logoData: Menu.propTypes.logoData,
-  footerHtml: Footer.propTypes.html,
+  footerHtml: Footer.propTypes.footerHtml,
   children: P.node.isRequired,
 };
