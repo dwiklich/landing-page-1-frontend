@@ -1,15 +1,11 @@
 import React from 'react';
+import { Base } from '../Base';
+import { mockBase } from '../Base/mock';
 
 import * as Styled from './styles';
 
 function Home() {
-  return (
-    <div className="App">
-      <Styled.Container>
-        <h1>Hello</h1>
-      </Styled.Container>
-    </div>
-  );
+  return <Base {...mockBase} />;
 }
 
 export default Home;

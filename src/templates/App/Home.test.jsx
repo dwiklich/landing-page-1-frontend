@@ -3,13 +3,10 @@ import { screen } from '@testing-library/react';
 import Home from '.';
 import { renderTheme } from '../../styles/render-theme';
 import { theme } from '../../styles/theme';
+import { mockBase } from '../Base/mock';
 
 describe('<Home />', () => {
   it('should render home', () => {
-    const { debug } = renderTheme(<Home />);
-  });
-
-  test('renders learn react link', () => {
-    const { debug } = renderTheme(<Home />);
+    renderTheme(<Home {...mockBase} />);
   });
 });
