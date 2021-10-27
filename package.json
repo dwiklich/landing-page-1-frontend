@@ -4,6 +4,7 @@
   "private": true,
   "homepage": ".",
   "dependencies": {
+    "@styled-icons/material-outlined": "^10.28.0",
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.5",
     "@testing-library/user-event": "^12.7.1",
@@ -46,7 +47,7 @@
     "@storybook/addon-links": "^6.1.18",
     "@storybook/node-logger": "^6.1.18",
     "@storybook/preset-create-react-app": "^3.1.6",
-    "@storybook/react": "^6.1.18",
+    "@storybook/react": "^6.0.28",
     "@styled-icons/material-outlined": "^10.34.0",
     "eslint-config-prettier": "^7.2.0",
     "eslint-plugin-prettier": "^3.3.1",
