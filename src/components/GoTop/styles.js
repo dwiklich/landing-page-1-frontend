@@ -14,5 +14,6 @@ export const Container = styled.a`
     bottom: 2rem;
     right: 2rem;
     z-index: 6;
+    border: 0.2rem solid ${theme.colors.white};
   `}
 `;
