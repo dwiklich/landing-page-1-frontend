@@ -10,7 +10,13 @@ import { TextComponent } from '../TextComponent';
 
 import * as Styled from './styles';
 
-export const GridImage = ({ background = false, title, description, grid }) => {
+export const GridImage = ({
+  background = false,
+  title,
+  description,
+  grid,
+  sectionId,
+}) => {
   const [imageModal, setImageModal] = useState([]);
   const [modal, setModal] = useState(true);
   const setterModal = () => {
@@ -19,7 +25,7 @@ export const GridImage = ({ background = false, title, description, grid }) => {
 
   return (
     <>
-      <SectionBackground background={background}>
+      <SectionBackground background={background} sectionId={sectionId}>
         <Styled.Container>
           <Heading size="huge" uppercase colorDark={!background}>
             {title}
@@ -57,6 +63,7 @@ GridImage.propTypes = {
   background: P.bool,
   title: P.string.isRequired,
   description: P.string.isRequired,
+  sectionId: P.string.isRequired,
   grid: P.arrayOf(
     P.shape({
       altText: P.string.isRequired,
