@@ -65,14 +65,17 @@ export const mapSectionGrid = (section = {}) => {
     description,
     background,
     sectionId,
-    imageGrid: mapGridImage(imageGrid),
-    textGrid: mapGridText(textGrid),
+    grid: {
+      imageGrid: mapGridImage(imageGrid),
+      textGrid: mapGridText(textGrid),
+    },
   };
 };
 
 const mapGridImage = (grid) => {
   return grid.map((element) => {
-    const { url: srcImg = '', alternativeText: altText = '' } = element;
+    const { image: { url: srcImg = '', alternativeText: altText = '' } = '' } =
+      element;
     return { srcImg, altText };
   });
 };
