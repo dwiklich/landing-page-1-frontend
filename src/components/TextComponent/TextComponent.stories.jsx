@@ -30,6 +30,5 @@ export default {
   },
 };
 export const Template = (args) => {
-  console.log('histo', args.children);
   return <TextComponent>{args.children}</TextComponent>;
 };

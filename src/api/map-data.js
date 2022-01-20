@@ -20,6 +20,3 @@ export const mapData = (pagesData = [{}]) => {
     };
   });
 };
-
-// const dados = require('./dados.json');
-// console.log(mapData(dados));

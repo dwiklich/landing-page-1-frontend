@@ -33,5 +33,8 @@ ul, ol {
   padding: ${({ theme }) => theme.spacings.medium};
  }
 
-
+.table {
+  width: 100%;
+  overflow-y: auto;
+}
 `;

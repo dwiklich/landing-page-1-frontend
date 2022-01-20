@@ -10,7 +10,6 @@ export const GridContent = ({
   background = false,
   sectionId = '',
 }) => {
-  console.log('gridCOntent', html);
   return (
     <SectionBackground background={background} sectionId={sectionId}>
       <Styled.Container>

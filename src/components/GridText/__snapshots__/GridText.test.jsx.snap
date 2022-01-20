@@ -82,8 +82,9 @@ exports[`<GridText /> should render with background 1`] = `
 }
 
 <div>
-  <div
+  <section
     class="c0"
+    id=""
   >
     <div
       class="c1"
@@ -149,6 +150,6 @@ exports[`<GridText /> should render with background 1`] = `
         </div>
       </div>
     </div>
-  </div>
+  </section>
 </div>
 `;

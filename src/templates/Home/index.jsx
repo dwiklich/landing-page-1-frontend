@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { useLocation } from 'react-router-dom';
 import * as Styled from './styles';
 
 import { Base } from '../Base';
@@ -12,16 +13,20 @@ import { GridContent } from '../../components/GridContent';
 import { GridText } from '../../components/GridText';
 import { GridImage } from '../../components/GridImage';
 
+import config from '../../config/index';
+
 function Home() {
   // const GlobalState = React.useContext();
   const [data, setData] = useState([]);
+  const location = useLocation();
 
   useEffect(() => {
+    const pathname = location.pathname.replace(/[^a-z0-9-_]/gi, '');
+    const slug = pathname ? pathname : config.defaultSlug;
+
     const load = async () => {
       try {
-        const data = await fetch(
-          'http://localhost:1337/pages/?slug=landing-page',
-        );
+        const data = await fetch(config.url + slug);
         const json = await data.json();
         const pageData = mapData(json);
         setData((prevState) => pageData[0]);
@@ -30,8 +35,22 @@ function Home() {
       }
     };
     load();
-  }, []);
-  console.log('data:', data);
+  }, [location]);
+
+  useEffect(() => {
+    if (!data) {
+      return (document.title = `Página não encontrada | ${config.siteName}`);
+    }
+
+    if (data && !data.slug) {
+      return (document.title = `Loading... | ${config.siteName}`);
+    }
+
+    if (data && data.title) {
+      return (document.title = `${data.title} | ${config.siteName}`);
+    }
+  }, [data]);
+
   if (!data) {
     return <PageNotFound />;
   }
@@ -43,7 +62,6 @@ function Home() {
   if (data) {
     const { menu, sections, footerHtml, slug } = data;
     const { text, srcImage, link, links } = menu;
-    console.log('menu', menu);
     return (
       <Base
         links={links}

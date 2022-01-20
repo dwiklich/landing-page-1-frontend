@@ -109,6 +109,7 @@ exports[`<Base /> should render 1`] = `
 }
 
 .c8 > img {
+  min-height: 2rem;
   max-height: 3rem;
 }
 
@@ -202,6 +203,7 @@ exports[`<Base /> should render 1`] = `
   bottom: 2rem;
   right: 2rem;
   z-index: 6;
+  border: 0.2rem solid #FFFFFF;
 }
 
 .c14 .c16 {
@@ -493,8 +495,9 @@ exports[`<Base /> should render 1`] = `
   <div
     class="c12"
   >
-    <div
+    <section
       class="c13"
+      id=""
     >
       <div
         class="c3 c4"
@@ -560,9 +563,10 @@ exports[`<Base /> should render 1`] = `
           </div>
         </div>
       </div>
-    </div>
-    <div
+    </section>
+    <section
       class="c21"
+      id=""
     >
       <div
         class="c3 c4"
@@ -628,9 +632,10 @@ exports[`<Base /> should render 1`] = `
           </div>
         </div>
       </div>
-    </div>
-    <div
+    </section>
+    <section
       class="c13"
+      id=""
     >
       <div
         class="c3 c4"
@@ -696,9 +701,10 @@ exports[`<Base /> should render 1`] = `
           </div>
         </div>
       </div>
-    </div>
-    <div
+    </section>
+    <section
       class="c21"
+      id=""
     >
       <div
         class="c3 c4"
@@ -764,9 +770,10 @@ exports[`<Base /> should render 1`] = `
           </div>
         </div>
       </div>
-    </div>
-    <div
+    </section>
+    <section
       class="c13"
+      id=""
     >
       <div
         class="c3 c4"
@@ -832,7 +839,7 @@ exports[`<Base /> should render 1`] = `
           </div>
         </div>
       </div>
-    </div>
+    </section>
     <footer
       class="c24"
     >

@@ -24,8 +24,9 @@ exports[`<SectionBackground /> should render with background dark 1`] = `
   align-items: center;
 }
 
-<div
+<section
   class="c0"
+  id=""
 >
   <div
     class="c1"
@@ -34,7 +35,7 @@ exports[`<SectionBackground /> should render with background dark 1`] = `
       texto
     </h1>
   </div>
-</div>
+</section>
 `;
 
 exports[`<SectionBackground /> should render with background light 1`] = `
@@ -59,8 +60,9 @@ exports[`<SectionBackground /> should render with background light 1`] = `
   align-items: center;
 }
 
-<div
+<section
   class="c0"
+  id=""
 >
   <div
     class="c1"
@@ -69,5 +71,5 @@ exports[`<SectionBackground /> should render with background light 1`] = `
       texto
     </h1>
   </div>
-</div>
+</section>
 `;

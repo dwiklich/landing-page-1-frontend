@@ -28,7 +28,7 @@ exports[`<GridContent /> should render 1`] = `
   align-items: center;
 }
 
-.c5 {
+.c4 {
   font-size: 2.4rem;
 }
 
@@ -38,10 +38,6 @@ exports[`<GridContent /> should render 1`] = `
   margin: 0 auto;
 }
 
-.c4 {
-  margin: 6.4rem;
-}
-
 @media (max-width:768px) {
   .c3 {
     font-size: 4rem;
@@ -49,8 +45,9 @@ exports[`<GridContent /> should render 1`] = `
 }
 
 <div>
-  <div
+  <section
     class="c0"
+    id=""
   >
     <div
       class="c1"
@@ -64,10 +61,10 @@ exports[`<GridContent /> should render 1`] = `
           O título que eu quero
         </h2>
         <div
-          class="c4"
+          class=""
         >
           <div
-            class="c5"
+            class="c4"
           >
             <p>
               <strong>
@@ -161,6 +158,6 @@ exports[`<GridContent /> should render 1`] = `
         </div>
       </div>
     </div>
-  </div>
+  </section>
 </div>
 `;

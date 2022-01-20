@@ -6,7 +6,7 @@ import * as Styled from './styles';
 export const SectionBackground = ({
   children,
   background = false,
-  sectionId,
+  sectionId = '',
 }) => {
   return (
     <>
@@ -19,6 +19,6 @@ export const SectionBackground = ({
 
 SectionBackground.propTypes = {
   children: P.node.isRequired,
-  sectionId: P.string.isRequired,
+  sectionId: P.string,
   background: P.bool,
 };

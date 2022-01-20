@@ -19,6 +19,7 @@ export const Grid = styled.div`
 
     @media ${theme.media.lteMedium} {
       grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      /* grid-template-columns: 1fr; */
     }
   `}
 `;

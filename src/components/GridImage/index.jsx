@@ -15,7 +15,7 @@ export const GridImage = ({
   title,
   description,
   grid,
-  sectionId,
+  sectionId = '',
 }) => {
   const [imageModal, setImageModal] = useState([]);
   const [modal, setModal] = useState(true);
@@ -63,7 +63,7 @@ GridImage.propTypes = {
   background: P.bool,
   title: P.string.isRequired,
   description: P.string.isRequired,
-  sectionId: P.string.isRequired,
+  sectionId: P.string,
   grid: P.arrayOf(
     P.shape({
       altText: P.string.isRequired,
